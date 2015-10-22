@@ -1,0 +1,482 @@
+%
+% $Id: slides.tex 7 2014-02-04 18:16:40Z nicb $
+%
+% Copyright (C) 2006 Nicola Bernardini nicb@sme-ccppd.org
+% 
+% This work is licensed under a Creative Commons License, and specifically the
+% 
+%   Creative Commons Attribution-ShareAlike 2.5 License
+%   http://creativecommons.org/licenses/by-sa/2.5/legalcode
+% 
+% Check http://www.creativecommons.org/ for more information on
+% Creative Commons Licenses and the Creative Commons Project.
+%
+% Set the macros below to whatever is appropriate in a given context
+%
+
+\newcommand{\topdir}{../../..}
+\newcommand{\imagedir}{\topdir/images}
+\newcommand{\exampledir}{\topdir/examples}
+\newcommand{\templatedir}{\topdir/../latex-templates/beamer/sme-ccppd}
+\documentclass[compress]{beamer}
+
+\usepackage{beamerthemeSME-CCPPD}
+\usepackage{beamercolorthemeSME-CCPPD}
+\usepackage{beamerinnerthemeSME-CCPPD}
+
+\usepackage{colortbl}
+\usepackage[italian]{babel}
+\usepackage{pgf}
+\usepackage{xspace}
+
+\usepackage{multimedia}
+\usepackage{xmpmulti}
+\usepackage{hyperref}
+\usepackage[nofancy]{svninfo}
+\newcommand{\rcstag}{v.\svnInfoRevision\ \ \svnInfoDate\xspace}
+\usepackage{gensymb}
+
+\newcommand{\hhref}[1]{\href{#1}{#1}}
+
+\pgfdeclareimage[width=16pt]{speaker}{\imagedir/speaker}
+\newcommand{\esdplay}[2]{\href{run: esdplay \exampledir/#1}{#2 \pgfuseimage{speaker}}}
+\newcommand{\oggplay}[2]{\href{run: ogg123 -d esd \exampledir/#1}{#2 \pgfuseimage{speaker}}}
+
+\newcommand{\cpyear}{2008}
+\newcommand{\cpholder}{Nicola Bernardini}
+\newcommand{\cpholderemail}{nicb@sme-ccppd.org}
+
+% Use some nice templates
+
+%\beamertemplateshadingbackground{red!10}{structure!10}
+\beamertemplatetransparentcovereddynamic
+\beamertemplateballitem
+\beamertemplatenumberedballsectiontoc
+
+% My colors
+\definecolor{notdone}{gray}{0.35}
+
+%\usecolortheme[named=MyColor]{structure}
+%\usecolortheme[named=MyColor]{structure}
+\beamertemplateshadingbackground{white!10}{white!10}
+
+\title[Creativit\`a Musicale e Ricerca Scientifica]
+{%
+    Creativit\`a Musicale e Ricerca Scientifica\\
+	{\tiny (\rcstag)}
+}
+
+\author{%
+	Nicola Bernardini\\
+    \href{mailto:\cpholderemail}{\cpholderemail}
+}
+\institute[SME-CCPPD]%
+{%
+	\href{http://www.conservatoriopollini.it}
+		 {Conservatorio di Musica ``C.Pollini'' -- Padova}
+}
+\date[Padova, 13/11/2008]{Padova, Universit\`a di Padova -- DEI, 13/11/2008}
+
+\begin{document}
+\svnInfo $Id: slides.tex 7 2014-02-04 18:16:40Z nicb $
+\newcounter{ms}
+  
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\begin{frame}
+    
+    \begin{columns}[T]
+        \begin{column}{0.7\textwidth}
+			    \begin{quote}
+			        Per quanto la crescita dell'orchestra sia legata al caso delle
+			        circostanze, delle condizioni, o dello sviluppo degli strumenti,
+			        la vera spinta dietro alla sua evoluzione \`e stata dopotutto l'arte
+			        musicale stessa e la sua domanda, sempre crescente e sempre pi\`u insistente,
+			        di mezzi di espressione adeguati.%
+			    \end{quote}
+			    \begin{flushright}
+			        Adam Carse,\\\emph{The History of Orchestration},\\p.7 (1925)
+			    \end{flushright}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \begin{center}
+                \pgfimage[width=\columnwidth]{\imagedir/carse-cover}
+            \end{center}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+  
+\section{Introduzione}
+
+\begin{frame}
+    \frametitle{Il rapporto tra Musica e Innovazione Tecnologico/Scientifica}
+
+    \begin{itemize}[<+- | alert@+->]
+        \item Luogo comune: \`e l'innovazione tecnologica a spostare le
+            frontiere dell'espressione musicale
+        \item Questo \`e vero solo in parte
+        \item In realt\`a, i processi sono due:
+            \begin{enumerate}[<+- | alert@+->]
+                \item I musicisti \emph{utilizzano} innovazioni tecnologiche
+                    quando queste sono ben consolidate e, tutto sommato, in
+                    modo poco innovativo
+                \item I musicisti formulano in continuazione richieste alla
+                    tecnologia (e -- in definitiva -- alla scienza) per
+                    riuscire a raggiungere i propri obbiettivi espressivi ed
+                    estetici
+            \end{enumerate}
+    \end{itemize}
+
+\end{frame}
+
+\section[Innovazione $\Rightarrow$ Musica]{L'Innovazione produce Musica}
+
+\subsection{Berio -- {\it THEMA}}
+
+\begin{frame}
+    \frametitle{Luciano Berio -- \emph{THEMA -- Omaggio a Joyce}} 
+
+    \begin{columns}[T]
+        \begin{column}{0.7\textwidth}
+			    \begin{itemize}
+			        \item \emph{Blblblblooming}:
+			
+			            \begin{itemize}
+			                \item Un anello veloce (nota pi\`u acuta)
+			                \item Un anello veloce (nota pi\`u grave)
+			                \item Un anello normale (ad altezza nominale)
+			            \end{itemize}
+			
+			        \item \esdplay{Blblblbooming.wav}{Risultato:}
+			
+			    \end{itemize}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \pgfimage[width=0.9\columnwidth]{\imagedir/berio}
+        \end{column}
+    \end{columns}
+        
+\end{frame}
+
+\subsection{Nono -- {\it Prae--Ludium}}
+
+\setcounter{ms}{0}
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{Luigi Nono -- \emph{Post--Prae Ludium per Donau} (\arabic{ms})} 
+
+    \begin{center}
+       \pgfimage[width=0.15\textwidth]{\imagedir/luigi_nono}\\[0.5\baselineskip]
+       \pgfimage[width=\textwidth]{\imagedir/Nono-PPPD} 
+    \end{center}
+
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{Luigi Nono -- \emph{Post--Prae Ludium per Donau} (\arabic{ms})} 
+
+    \begin{columns}
+        \begin{column}{0.9\textwidth}
+            \vspace{-0.6cm}
+            \begin{figure}
+                \pgfimage[height=0.7\textheight]{\imagedir/Nono-PPPD-schema} 
+                \caption{\emph{Post--Prae Ludium per Donau}, schema esecutivo di Alvise Vidolin}
+            \end{figure}
+        \end{column}
+        \begin{column}{0.1\textwidth}
+            \esdplay{Delay4_A_misto_rotto_Rev.wav}{}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\section[Musica $\Rightarrow$ Innovazione]{La Musica produce Innovazione}
+
+\subsection[Classici]{Esempi Classici}
+
+\begin{frame}
+    \frametitle{Un esempio classico di stimolo dell'innovazione}
+
+    \begin{columns}[T]
+        \begin{column}{0.2\textwidth}
+            \pgfimage[width=\columnwidth]{\imagedir/wagner-01} 
+        \end{column}
+        \begin{column}{0.5\textwidth}
+            Richard Wagner, tornato in Germania dopo l'esilio nel 1861, si
+            stabilisce a Biebrich, dove risiede anche Wilhelm Heckel,
+            costruttore di fagotti. Dallo stretto rapporto che si stringe tra i due
+            nascer\`a il \emph{Heckelphon} (utilizzato poi da Strauss nella
+            \emph{Salom\'e}) e si perfezioner\`a il \emph{controfagotto} (utilizzato nel
+            \emph{Parsifal}).
+        \end{column}
+        \begin{column}{0.05\textwidth}
+            \pgfimage[height=0.8\textheight]{\imagedir/heckelphon_big}
+        \end{column}
+        \begin{column}{0.1\textwidth}
+            \pgfimage[height=0.8\textheight]{\imagedir/kontrafagott_big}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\subsection[4X]{IRCAM 4X}
+
+\begin{frame}
+    \frametitle{Berio, Di Giugno e la 4X} 
+
+    \begin{columns}[T]
+        \begin{column}{0.6\textwidth}
+            Berio invita il fisico Giuseppe Di Giugno all'IRCAM chiedendogli,
+            nel 1976, un ``sintetizzatore con 1000 oscillatori''. Il
+            sintetizzatore (denominato \emph{4X}) \`e pronto nel 1981.
+            Nel frattempo, Berio \`e partito per altri lidi. 
+            La \emph{4X} verr\`a poi industrializzata ed impiegata dall'industria aeronautica 
+            per le simulazioni degli aerei Airbus.
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \pgfimage[width=0.9\columnwidth]{\imagedir/boulez+di_giugno-001}\\
+            \pgfimage[width=0.9\columnwidth]{\imagedir/4X-2}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\subsection[DX7]{Chowning e il DX7}
+
+\begin{frame}
+    \frametitle{Chowning e lo Yamaha DX7}
+    
+    \begin{columns}[T]
+        \begin{column}{0.6\textwidth}
+            Il compositore John Chowning elabora la sintesi dei suoni per
+            modulazione di frequenza nel '67-'68 per comporre i suoi lavori.
+            La tecnica verr\`a poi utilizzata nei sintetizzatori \emph{Yamaha
+            DX7}, che rivoluzioneranno il mercato degli strumenti musicali
+            negli anni '80.
+        \end{column}
+        \begin{column}{0.4\textwidth}
+            \begin{center}
+                \pgfimage[width=0.6\columnwidth]{\imagedir/chowning}
+            \end{center}
+            \hspace{-4cm}\pgfimage[width=1.9\columnwidth]{\imagedir/dx7}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\subsection[Morphing]{Berio e il {\it morphing}}
+
+\begin{frame}
+    \frametitle{Berio e il \emph{Morphing}}
+
+    \begin{columns}[T]
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item Berio era affascinato dall'idea del \emph{morphing}
+                    timbrico tra uno strumento e l'altro
+                \item Esperimento fallito: \emph{Chemins V} (poi ritirato) nel 1980
+                \item Esperimento pi\`u riuscito: l'introduzione di \emph{Ofanim}
+                \item La ricerca continua\dots
+            \end{itemize}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \pgfimage[width=0.9\columnwidth]{\imagedir/berio-02}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\subsection[Spazializzazione]{La Spazializzazione Espressiva}
+
+\setcounter{ms}{0}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{La Spazializzazione Espressiva (\arabic{ms})}
+
+    \begin{columns}[T]
+        \begin{column}{0.7\textwidth}
+            Nel 2002, il compositore italiano Adriano Guarnieri chiese di
+            poter rendere in maniera pi\`u espressiva la spazializzazione del
+            quartetto di tromboni nell'esecuzione di \emph{Medea}.
+            In seno al Centro di Sonologia Computazionale di Padova venne
+            realizzato un sistema di ``spazializzazione espressiva'' unico nel
+            suo genere.
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \pgfimage[width=\columnwidth]{\imagedir/guarnieri-02} 
+        \end{column}
+    \end{columns}
+    
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{La Spazializzazione Espressiva (\arabic{ms})}
+
+    \begin{center}
+        \begin{figure}
+            \begin{center}
+                \pgfimage[height=0.7\textheight]{\imagedir/eyesweb-processing}
+            \end{center}
+            \caption{Schema della ``spazializzazione espressiva'' per \emph{Medea} (Amalia de G\"otzen)}
+            \label{fig:medea processing}
+        \end{figure}
+    \end{center}
+    
+\end{frame}
+
+\subsection[Guarnieri]{Le Partiture di Adriano Guarnieri}
+
+\setcounter{ms}{0}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{Le Partiture di Adriano Guarnieri (\arabic{ms})}
+
+    \begin{columns}[T]
+        \begin{column}{0.7\textwidth}
+				    \begin{itemize}[<+- | alert@+->]
+				       \item Molti sono i problemi aperti\dots
+				       \item \dots ad esempio quelli delle partiture di Adriano
+				                    Guarnieri
+				    \end{itemize}
+        \end{column}
+        \begin{column}{0.3\textwidth}
+            \pgfimage[width=\columnwidth]{\imagedir/guarnieri} 
+        \end{column}
+    \end{columns}
+    
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{Le Partiture di Adriano Guarnieri (\arabic{ms})}
+
+    \begin{columns}[T]
+        \begin{column}{0.9\textwidth}
+            \href{run: display \imagedir/Guarnieri-Passione-Lettera_M}
+                {\pgfimage[width=\columnwidth]{\imagedir/Guarnieri-Passione-Lettera_M}}
+        \end{column}
+        \begin{column}{0.1\textwidth}
+            \oggplay{Guarnieri-Passione_Lettera_M.ogg}{}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{(Le analisi di Heinrich Schenker)}
+
+    \begin{center}
+        \begin{figure}
+            \pgfimage[height=0.7\textheight]{\imagedir/Schenker-Chopin_Etude_F_Major_op.10-n.8}
+            \caption{Schenker -- Analisi dello \emph{Studio in Fa Maggiore} di Fryderyk Chopin op.10 n.8}
+        \end{figure}
+    \end{center}
+
+\end{frame}
+
+\subsection[Scelsi]{I nastri di Giacinto Scelsi}
+
+\setcounter{ms}{0}
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{I Nastri di Giacinto Scelsi (\arabic{ms})}
+    
+    \begin{columns}[T]
+        \begin{column}{0.3\textwidth}
+            \pgfimage[width=\columnwidth]{\imagedir/Scelsi}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}[<+- | alert@+->]
+                \item Scelsi, compositore italiano vissuto tra il 1905 ed il
+                    1988, usava il nastro magnetico come
+                    ``quaderno di schizzi'' per le sue composizioni\dots
+                \item Capire la traiettoria creativa di queste ultime
+                    costituirebbe un successo nell'ambito del \emph{data
+                    mining}
+            \end{itemize}
+        \end{column}
+    \end{columns}
+
+\end{frame}
+
+\refstepcounter{ms}
+\begin{frame}
+    \frametitle{I Nastri di Giacinto Scelsi (\arabic{ms})}
+    
+    \begin{center}
+        \pgfimage[height=0.8\textheight]{\imagedir/CONTAKTE-concept} 
+    \end{center}
+
+\end{frame}
+
+\section[Come]{Come si realizza questo sodalizio?}
+
+\subsection{Problemi}
+
+\begin{frame}
+    \frametitle{Creazione Musicale e Ricerca Scientifica -- i Problemi}
+
+    \begin{itemize}[<+- | alert@+->]
+        \item La musica risponde ad imperativi estetici, mentre la scienza
+            risponde a categorie razionali
+        \item La musica ha (in genere) scadenze improrogabili e molto
+            pressanti, mentre la ricerca non pu\`o garantire i propri
+            risultati
+        \item Il compositore \`e (in genere) un autarchico, mentre la ricerca
+            deve basarsi su collaborazioni e condivisioni dei propri risultati
+        \item Ciascun idioma musicale contemporaneo \`e fortemente
+            caratterizzato e specifico, mentre la ricerca deve adottare
+            terminologie e notazioni universalmente riconosciute
+        \item \ldots
+    \end{itemize}
+
+\end{frame}
+
+\subsection{Soluzioni}
+
+\begin{frame}
+    \frametitle{Binari Paralleli, Ambienti e Mediatori}
+
+    \begin{itemize}[<+- | alert@+->]
+        \item Composizione Musicale e Ricerca Scientifica non devono dipendere
+            strettamente l'una dall'altra: esse devono viaggiare su due binari
+            paralleli
+        \item Gli ambienti ideali per un incontro non possono essere i laboratori
+            convenzionali: sono un po' laboratori, un po' studi, un po'
+            salotti
+        \item Sono ambienti in cui si fa \emph{cultura}, non si fa \emph{intrattenimento}
+        \item Spesso, l'incontro tra Compositori e Scienziati avviene con
+            l'ausilio di figure di mediazione -- i ``registi'' dell'opera in
+            questione
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+    \frametitle{Come si arriva all'Innovazione Tecnologica e Scientifica?}
+
+    \begin{itemize}[<+- | alert@+->]
+        \item Il processo che porta dalla Creazione Musicale all'Innovazione
+            Tecnologica \`e ancora in larga parte oscuro (informazione
+            \emph{implicita})
+        \item L'industria e l'economia sono ora interessate a capire quali
+            sono le modalit\`a ed i processi che possano favorire un salto
+            qualitativo dell'innovazione
+        \item Studio etnografico di queste comunit\`a ``miste''
+    \end{itemize}
+    
+\end{frame}
+
+\begin{frame}
+    \begin{center}
+        {\Huge FINE}\\[2\baselineskip]
+        Grazie per l'ascolto.
+    \end{center}
+\end{frame}
+
+\end{document}
