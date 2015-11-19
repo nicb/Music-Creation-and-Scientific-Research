@@ -1,0 +1,142 @@
+%
+% $Id: slides.tex 152 2015-06-24 04:46:28Z nicb $
+%
+% Copyright (C) 2006 Nicola Bernardini nicb@sme-ccppd.org
+% 
+% This work is licensed under a Creative Commons License, and specifically the
+% 
+%   Creative Commons Attribution-ShareAlike 2.5 License
+%   http://creativecommons.org/licenses/by-sa/2.5/legalcode
+% 
+% Check http://www.creativecommons.org/ for more information on
+% Creative Commons Licenses and the Creative Commons Project.
+%
+% Set the macros below to whatever is appropriate in a given context
+%
+
+\newcommand{\topdir}{../../..}
+\newcommand{\imagedir}{\topdir/images}
+\newcommand{\exampledir}{\topdir/examples}
+\newcommand{\templatedir}{\topdir/../latex-templates/beamer/smerm}
+\newcommand{\commondir}{../common}
+\documentclass[compress]{beamer}
+
+\usepackage{beamerthemeSMERM}
+\usepackage{beamercolorthemeSMERM}
+\usepackage{beamerinnerthemeSMERM}
+
+\usepackage{colortbl}
+\usepackage[english]{babel}
+\usepackage{pgf}
+\usepackage{xspace}
+
+\usepackage{multimedia}
+\usepackage{xmpmulti}
+\usepackage{hyperref}
+\usepackage[nofancy]{svninfo}
+\usepackage{gensymb}
+\usepackage{gitinfo2}
+
+\newcommand{\cpyear}{2015}
+\newcommand{\cpholder}{Nicola Bernardini}
+\newcommand{\cpholderemail}{n.bernardini@conservatoriosantacecilia.it}
+
+% Use some nice templates
+
+%\beamertemplateshadingbackground{red!10}{structure!10}
+\beamertemplatetransparentcovereddynamic
+\beamertemplateballitem
+\beamertemplatenumberedballsectiontoc
+
+% My colors
+\definecolor{notdone}{gray}{0.35}
+
+%\usecolortheme[named=MyColor]{structure}
+%\usecolortheme[named=MyColor]{structure}
+\beamertemplateshadingbackground{white!10}{white!10}
+
+\input{\templatedir/macros}
+
+\title[Music Creation and Scientific Research]
+{%
+    Music Creation and Scientific Research\\
+	{\tiny (\rcstag)}
+}
+
+\author{%
+	Nicola Bernardini\\
+    \href{mailto:\cpholderemail}{\cpholderemail}
+}
+\institute[SMERM]%
+{%
+	\href{http://www.conservatoriosantacecilia.it}
+		 {Conservatorio di Musica ``S.Cecilia'' -- Roma}
+}
+\date[Copenhagen, 20/11/2015]{Aalborg University in Copenhagen\\Sound and Music Computing seminars}
+
+\begin{document}
+
+\newcounter{ms}
+  
+\begin{frame}
+	\titlepage
+\end{frame}
+
+\input{\commondir/carse_quote}
+
+\section{Introduction}
+
+\input{\commondir/intro}
+
+\section[Innovation $\Rightarrow$ Music]{Innovation generates Music}
+
+\subsection{Berio -- {\it THEMA}}
+
+\input{\commondir/thema}
+
+\subsection{Nono -- {\it Donau}}
+
+\input{\commondir/donau}
+
+\section[Music $\Rightarrow$ Innovation]{Music generates Innovation}
+
+\subsection[Classics]{Classical Examples}
+
+\input{\commondir/classical_examples}
+
+\subsection[4X]{IRCAM 4X}
+
+\input{\commondir/4x}
+
+\subsection[DX7]{Chowning and the DX7}
+
+\input{\commondir/dx7}
+
+\subsection[Morphing]{Berio and {\it morphing}}
+
+\input{\commondir/berio_and_morphing}
+
+\subsection[Spatialization]{Expressive Spatialization}
+
+\input{\commondir/expressive_spatialization}
+
+\subsection[Guarnieri]{The scores of Adriano Guarnieri}
+
+\input{\commondir/guarnieris_scores}
+
+\subsection[Scelsi]{The tapes of Giacinto Scelsi}
+
+\input{\commondir/scelsis_tapes}
+
+\section[How]{How can we marry?}
+
+\input{\commondir/how_to_do_it}
+
+\begin{frame}
+    \begin{center}
+        {\Huge THE END}\\[2\baselineskip]
+				Thank you.
+    \end{center}
+\end{frame}
+
+\end{document}
