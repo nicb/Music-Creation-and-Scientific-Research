@@ -4,6 +4,7 @@
 TARGET=slides.pdf 
 
 
+PRINTMODE=beamer
 DVI=$(TARGET:.pdf=.dvi)
 SRC=$(TARGET):.pdf=.dvi)
 AUX=$(TARGET):.pdf=.aux)
@@ -19,12 +20,12 @@ all: $(TARGET)
 $(TARGET):	images
 
 %.pdf:	%.tex
-	$(PDFLATEX) $<
+	$(PDFLATEX) '\newcommand{\printmode}{$(PRINTMODE)}\input{$<}'
 	$(RM) $@
 #	$(BIBTEX) $* 
-	$(PDFLATEX) $<
+	$(PDFLATEX) '\newcommand{\printmode}{$(PRINTMODE)}\input{$<}'
 	$(RM) $@
-	$(PDFLATEX) $<
+	$(PDFLATEX) '\newcommand{\printmode}{$(PRINTMODE)}\input{$<}'
 
 images:
 	$(MAKE) -C $(IMAGEDIR) -$(MAKEFLAGS)
