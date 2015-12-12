@@ -6,4 +6,5 @@ Lecture over the relationship between Music Creation and Scientific Research (in
 
 * November 13, 2008 -- Università di Padova, Facoltà di Ingegneria (in italian)
 * June 24, 2015 -- Sapienza Università di Roma, Facoltà di Ingegneria, XII Workshop Tecnologie per la Musica (in italian)
-* November 20, 2015 -- Aalborg University in Copenhagen, Sound and Music Computing Colloquium
+* November 20, 2015 -- Aalborg University in Copenhagen, Sound and Music Computing Colloquium (in english)
+* December 14, 2015 -- Kungliga Tekniska Högskolan Stockholm, Interaktioner 2015 (titled as: *Artistic Creation and Scientific Research*) (in english)
